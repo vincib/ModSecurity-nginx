@@ -18,6 +18,8 @@ build:
 	    --add-dynamic-module=../libnginx-mod-security/ && make -j 8
 
 install:
-	cp mod-security.conf $(DESTDIR)/usr/share/nginx/modules-available
-	cd ../nginx-$(NGINX_VERSION) && cp ./objs/ngx_http_modsecurity_module.so $(DESTDIR)/usr/lib/nginx/modules/
-
+	install -o root -g root -m 0644 mod-security.conf $(DESTDIR)/usr/share/nginx/modules-available
+	install -o root -g root -m 0644 modsecurity.conf-recommended $(DESTDIR)/etc/nginx/modsec/modsecurity.conf
+	install -o root -g root -m 0644 unicode.mapping $(DESTDIR)/etc/nginx/modsec/
+	install -o root -g root -m 0644 testrule.conf $(DESTDIR)/etc/nginx/modsec/
+	cd ../nginx-$(NGINX_VERSION) && install -o root -g root ./objs/ngx_http_modsecurity_module.so $(DESTDIR)/usr/lib/nginx/modules/

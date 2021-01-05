@@ -1,2 +1,3 @@
 usr/share/nginx/modules-available
 usr/lib/nginx/modules
+etc/nginx/modsec
