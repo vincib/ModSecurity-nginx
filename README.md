@@ -1,4 +1,8 @@
 
+This repository allows to build a Debian package for Nginx
+
+currently quite crude :)
+
 <img src="https://github.com/SpiderLabs/ModSecurity/raw/v3/master/others/modsec.png" width="50%">
 
 [![Build Status](https://travis-ci.org/SpiderLabs/ModSecurity-nginx.svg?branch=master)](https://travis-ci.org/SpiderLabs/ModSecurity-nginx)

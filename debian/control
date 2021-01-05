@@ -1,0 +1,30 @@
+Source: libnginx-mod-security
+Section: httpd
+Priority: optional
+Maintainer: Benjamin Sonntag <benjamin@octopuce.fr>
+Build-Depends: debhelper (>= 10),
+               dpkg-dev (>= 1.15.5),
+               libexpat-dev,
+               libgd-dev,
+               libgeoip-dev,
+               libhiredis-dev,
+               libmhash-dev,
+               libpam0g-dev,
+               libpcre3-dev,
+               libperl-dev,
+               libssl-dev,
+               libxslt1-dev,
+               po-debconf,
+               quilt,
+               zlib1g-dev
+Standards-Version: 3.9.4
+
+Package: libnginx-mod-security
+Architecture: any
+Depends: nginx (>=1.14.2)
+       , ${misc:Depends}
+Description: ModSecurity 3 module for Nginx
+ ModSecurity is a web application firewall, that allows you to analyze
+ your http/https queries deeply, and react accordingly by allowing,
+ logging or blocking them.
+Homepage: https://www.modsecurity.org/
