@@ -1,8 +1,5 @@
 #!/usr/bin/make -f
 
-override_dh_build:
-	$(MAKE) build
-
 %:
 	dh $@
 

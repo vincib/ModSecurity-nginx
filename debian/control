@@ -16,13 +16,13 @@ Build-Depends: debhelper (>= 10),
                libxslt1-dev,
                po-debconf,
                quilt,
-               zlib1g-dev
-Standards-Version: 3.9.4
+               zlib1g-dev,
+	       libmodsecurity-dev
+Standards-Version: 4.3.0
 
 Package: libnginx-mod-security
 Architecture: any
-Depends: nginx (>=1.14.2)
-       , ${misc:Depends}
+Depends: nginx (>=1.14.2), ${misc:Depends}, ${shlibs:Depends}
 Description: ModSecurity 3 module for Nginx
  ModSecurity is a web application firewall, that allows you to analyze
  your http/https queries deeply, and react accordingly by allowing,

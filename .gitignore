@@ -1,0 +1,4 @@
+debian/.debhelper/
+debian/debhelper-build-stamp
+debian/libnginx-mod-security.substvars
+debian/libnginx-mod-security/

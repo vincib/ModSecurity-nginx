@@ -2,4 +2,4 @@ libnginx-mod-security (3.0.3-1) stable; urgency=low
 
   * first packaging of libnginx-mod-security for debian
 
- -- Benjamin Sonntag <benjamin@octopuce.fr>  Mon,  5 Jan 2021 17:32:00 +0100
+ -- Benjamin Sonntag <benjamin@octopuce.fr>  Tue,  5 Jan 2021 17:32:00 +0100
